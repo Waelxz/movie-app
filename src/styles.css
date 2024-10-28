@@ -1,1 +1,177 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+
+body{
+    background-color: #47284dee;
+    
+    background-image: url('assets/bg2.png');
+    background-blend-mode: multiply;
+     /* Cover the entire area */
+     /* Center the image */
+    background-repeat: repeat-y; /* Repeat vertically */
+.app-description {
+
+    font-size: 20px; /* Adjust font size */
+    font-family:'Poppins',sans-serif;
+    font-weight: 100; /* Adjust font weight */
+    text-align: left; /* Center text */
+    padding-left: 120px; /* Remove default margin */
+     /* Remove default padding */
+    color: #d1cdcd; /* Text color */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+    margin-top: 20px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
+    width: 730px;
+}
+.sp {
+    font-size: 20px; /* Adjust font size */
+    font-family:'Poppins',sans-serif;
+    font-weight: 550;
+    color: #fb7fff;
+}
+}
+body::before{
+    content: ""; /* Required for pseudo-element */
+    
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(34, 32, 32, 0.897)60%; /* Adjust the opacity for fading effect */
+    pointer-events: none; /* Make sure it doesn't interfere with interactions */
+    
+}
+/* Background for the entire application */
+.app-background {
+    display: flex; /* To center content if needed */
+    flex-direction: column; /* Adjust layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically if required */
+    /* Full viewport width */
+     /* Full viewport height */
+    
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: rgb(235, 238, 245); /* Text color */
+    font-family: 'Poppins', sans-serif; /* Your preferred font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-weight: 300;
+    
+}
+
+/* Additional styles for text and components */
+.app-background a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(124, 110, 246); /* Link color */
+    font-weight: 700; /* Bold text */
+}
+.app-background .card {
+    padding: 8px; /* Card padding */
+    background-color: rgba(18, 24, 41, 0.98); /* Card background */
+    border-radius: 12px; /* Rounded corners */
+    margin: 8px 0; /* Margin between cards */
+}
+.app-background .movie-detail {
+    position: relative; /* For absolutely positioned elements */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+
+
+
+
+
+
+
+/* Scrollbar Styles */
+
+
+::-webkit-scrollbar-thumb {
+    background: #20283e;
+    background: var(--grey-800);
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+::-webkit-scrollbar-track {
+    background: #121829;
+    background: var(--grey-900);
+}
+
+
+
+/* Root Variables */
+:root {
+    color-scheme: dark;
+    --primary-50: #ebe9fe;
+    --primary-100: #dedbfd;
+    --primary-200: #beb7fb;
+    --primary-300: #9c92f8;
+    --primary-400: #7c6ef6;
+    --primary-500: #5b4af4;
+    --primary-500-10: rgba(91, 74, 244, 0.1);
+    --primary-600: #493bc3;
+    --primary-700: #362c92;
+    --primary-800: #251e62;
+    --primary-900: #120f31;
+    --secondary-50: #e4f4ff;
+    --secondary-100: #d2ecfe;
+    --secondary-200: #a5dafe;
+    --secondary-300: #78c8fd;
+    --secondary-400: #4bb6fd;
+    --secondary-500: #1ea3fc;
+    --secondary-600: #1883ca;
+    --secondary-700: #126297;
+    --secondary-800: #0c4265;
+    --secondary-900: #062032;
+    --tertary-50: #f6edff;
+    --tertary-100: #f0e2ff;
+    --tertary-200: #e2c5ff;
+    --tertary-300: #d3a7ff;
+    --tertary-400: #c58aff;
+    --tertary-500: #b66dff;
+    --tertary-600: #9257cc;
+    --tertary-700: #6d4199;
+    --tertary-800: #492c66;
+    --tertary-900: #241633;
+    --success-50: #e1f9f2;
+    --success-100: #cdf5e9;
+    --success-200: #9bebd3;
+    --success-300: #69e2be;
+    --success-400: #37d8a8;
+    --success-500: #05ce92;
+    --success-600: #04a575;
+    --success-700: #037c58;
+    --success-800: #02523a;
+    --success-900: #01291d;
+    --error-50: #ffecec;
+    --error-100: #ffdfdf;
+    --error-200: #ffc0c0;
+    --error-300: #ffa0a0;
+    --error-400: #ff8181;
+    --error-500: #ff6161;
+    --error-600: #cc4e4e;
+    --error-700: #993a3a;
+    --error-800: #662727;
+}
+
+/* HTML Styles */
+
+
+/* Body Styles */
+body, html {
+    color: #ebeef5;
+    color: var(--grey-50);
+}
+
+body {
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-weight: 600;
+    
+    margin: 0;
+    text-align: left;
+}

@@ -1,0 +1,99 @@
+/* Cover Image */
+.cover-img {
+    display: flex;
+    border-radius: 60px;
+    justify-content: center; 
+    align-content: center;
+    margin: 20px auto;
+    width: 75%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 20%;
+    position: relative; /* Add position relative to hold absolute children */
+}
+
+/* Title */
+.title {
+    position: absolute; /* Change from 'display: absolute;' to 'position: absolute;' */
+    font-size: 25px;
+    font-weight: 500;
+    
+    color: #fff;
+    width: auto;
+    padding: 20px; /* Adjusted padding */
+    top: 230px; /* Vertical position */
+    left: 210px; /* Positioned to the right side */
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(18, 24, 41, 0.956)60%, rgba(18, 24, 41, 0))100%; /* Gradient from top to bottom with decreasing opacity */
+    border-radius: 20px;
+    box-shadow: #be62f73a 5px -5px 15px; /* Add shadow to the title */
+}
+
+
+.detail-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    margin: 20px auto; /* Center the container */
+    max-width: 950px; /* Set a max width for the layout */
+}
+
+/* Poster Image */
+.poster-img {
+    width: 35%;
+    height: 35%;
+    object-fit: cover;
+    
+    margin: 30px;
+    border-radius: 25px;
+}
+
+/* Movie Details */
+.movie-details {
+    flex: 1; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #fff;
+   
+    margin: 35px 30px;
+}
+.spf{
+    color: rgba(228, 120, 255, 0.733);
+}
+.rating{
+    font-size: 25px
+}
+.watch-button {
+    margin: 10px -2px;
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 15px 25px; /* Adjusts padding for the button */
+    font-size: 16px; /* Sets font size */
+    font-weight: bold; /* Makes text bold */
+    color: #fff; /* Text color */
+    background-color: #6a0dad; /* Purple background */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds corners */
+    text-decoration: none; /* Removes underline */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.watch-button:hover {
+    background-color: #5a0a8d; /* Darker shade on hover */
+}
+.footer {
+    color: white;
+    width: 100%;
+    z-index: 200;
+    display: flex;
+    padding: 16px 120px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin-top: 30px ;
+    box-sizing: border-box;
+    background-color: rgba(18, 24, 41, 0.98);
+  }
+.fab{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}

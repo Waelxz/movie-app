@@ -1,0 +1,53 @@
+.search-bar {
+  display: flex; /* Enable flexbox layout */
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 120px; /* Adjust if needed */
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px; /* Adjust this value based on your design */
+  color: rgb(105, 104, 105); /* Customize the icon color */
+}
+.search-bar:focus-within .search-icon {
+  color: rgb(91, 74, 244); /* Change icon color on focus */
+}
+input {
+  border-color: rgb(105, 104, 105);
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  appearance: none;
+  z-index: 3;
+  font-family: "Poppins", sans-serif;
+  border-style:double;
+  padding-left: 50px; /* Adjust padding as necessary */
+  width: 60%; /* Maintain width */
+  height: 64px;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 12px;
+  color: rgb(238, 238, 241);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Styles for input focus */
+input:focus {
+  border-color: rgb(91, 74, 244); /* Change border color on focus */
+}
+
+/* Styles for the placeholder */
+input::placeholder {
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for placeholder */
+  color: rgba(118, 126, 148, 0.8); /* Placeholder color */
+  opacity: 1; /* Default opacity */
+}
+
+/* Placeholder text move up when the input is focused */
+input:focus::placeholder {
+  transform: translateX(10px); /* Move up */
+  color: aliceblue;
+  opacity: 0.8; /* Lighten the placeholder text */
+}

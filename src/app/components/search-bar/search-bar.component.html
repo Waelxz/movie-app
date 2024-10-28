@@ -1,0 +1,10 @@
+<div class="search-bar">
+    <fa-icon [icon]="faSearch" class="search-icon"></fa-icon>
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+      placeholder="Search for movies..."
+    />
+  </div>
+  

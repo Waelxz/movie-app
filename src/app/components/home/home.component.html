@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<h1 class="title">Forja BlockBuster</h1>
+
+<p class="app-description">This project is built to showcase a collection of movies sourced through web scraping. Using <span class="sp">Python</span> and <span class="sp">BeautifulSoup</span> , movie data is extracted from <span class='sp'><a href="https://flixhq.to">flixhq.to</a></span> and stored in a movies.json file. Then integrated into this Angular SPA web Application <br><br>Created by <span class="sp"><a href="https://www.linkedin.com/in/dridiwael/">Waelxz</a></span></p>
+   <span> <app-search-bar (searchChange)="onSearch($event)"></app-search-bar></span>
+<div class="app-background">
+    
+    <div class="movie-list">
+      <div *ngFor="let movie of filteredMovies" class="movie-card">
+        <div [routerLink]="['/movie', movie.title]" class="view-details">
+        <div class="card-background" [style.backgroundImage]="'url(' + movie.poster_img + ')'">
+          <img [src]="movie.poster_img" alt="{{ movie.title }}" class="movie-poster">
+          <!-- Rating and HD Label -->
+          <span class="rating"> <i class="fas fa-star"></i> {{ movie.rating }}</span>
+          <span class="hd-label">HD</span>
+          <div class="movie-title-overlay">
+            <span class="movie-title">{{ movie.title }}</span>
+          </div>
+          <div class="movie-details-overlay">
+            <p class="movie-info">{{ movie.year }} •  {{ movie.duration }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <footer class="footer">
+    <a href="https://instagram.com/waeel_dridi" target="_blank"><i class="fab fa-instagram"></i></a>
+    <p>Created by <strong>Wael Dridi</strong></p>
+      
+  </footer>
+  

@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div *ngIf="movie" class="movie-detail">
+    <img [src]="movie.cover_img" alt="{{ movie.title }}" class="cover-img" />
+    <span ><h1 class="title">{{ movie.title }}  </h1>
+        
+    </span>
+    <div class="detail-container">
+        <img [src]="movie.poster_img" alt="{{ movie.title }}" class="poster-img" />
+        <div class="movie-details">
+            <div class="rating"><i class="fas fa-star"></i> {{ movie.rating }}</div>
+            <p><strong class="spf">Summary: </strong> {{ movie.description }}</p>
+            <p><strong class="spf">Country: </strong> {{ movie.country }}</p>
+            <p><strong class="spf">Genres:</strong> {{ movie.genres }}</p>
+            
+            <p><strong class="spf">Released: </strong> {{ movie.released }}</p>
+            
+        
+            <p><strong class="spf">Production: </strong> {{ movie.productions }}</p>
+            <p><strong class="spf">Casts: </strong> {{ movie.casts }}</p>
+            <a [href]="movie.detail_url" target="_blank" class="watch-button">Watch Now</a>
+
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+     <p> Created by <strong>Wael Dridi</strong></p>
+</footer>

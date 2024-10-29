@@ -2,7 +2,7 @@
   display: flex; /* Enable flexbox layout */
   position: relative;
   margin-bottom: 20px;
-  margin-left: 120px; /* Adjust if needed */
+  margin-left: 7%; /* Adjust if needed */
   align-items: center;
 }
 
@@ -23,7 +23,7 @@ input {
   font-family: "Poppins", sans-serif;
   border-style:double;
   padding-left: 50px; /* Adjust padding as necessary */
-  width: 60%; /* Maintain width */
+  width: 650px; /* Maintain width */
   height: 64px;
   font-size: 16px;
   line-height: 20px;

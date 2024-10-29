@@ -5,7 +5,7 @@
     padding: 16px 120px;
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 ;
     box-sizing: border-box;
     background-color: rgba(18, 24, 41, 0.98);

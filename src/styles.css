@@ -16,7 +16,7 @@ body{
     font-family:'Poppins',sans-serif;
     font-weight: 100; /* Adjust font weight */
     text-align: left; /* Center text */
-    padding-left: 120px; /* Remove default margin */
+    padding-left: 7%; /* Remove default margin */
      /* Remove default padding */
     color: #d1cdcd; /* Text color */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
